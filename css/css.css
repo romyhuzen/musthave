@@ -1,0 +1,154 @@
+/*  
+  Class:  4A7B
+  Name:  R.Huzen
+  Purpose:  Template layout website  
+
+  mm-dd-yyyy  Description
+  -----------------  -------------------------------------------------------------------------------------------------
+  10-24-2017  initial
+*/
+
+/***************************************************
+* include the padding and border to all elements   *
+***************************************************/
+
+*{
+	box-sizing:border-box;
+}
+
+/********************
+*  Default setting  *
+********************/
+
+/*overall css*/
+
+:root{
+	--MustHave_black: black;
+	--MustHave_orange: orange;
+	--MustHave_pblue: powderblue;
+	--MustHave_white: white;
+	--MustHave_blue: #355A9C;
+}
+
+body{
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:10px;
+	font-size:1.0em;
+	font-family:'Calibri';
+	color: var(--MustHave_black); 
+}  
+
+.logo_text{
+	margin-left:5px;
+	margin-right:5px;
+	color: var(--MustHave_orange);
+	font-size:0.77em;
+}
+
+.logo_image{
+	width:260px;
+}
+
+.newrow::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+
+.column_article{
+	padding:15px;
+	border:1x solid black;
+}
+
+section{
+	padding:10px;
+	background-color: var(--MustHave_pblue);
+}
+
+article{
+	background-color:white;
+	margin:5px;
+	padding:10px;
+}
+
+.column_company{
+	padding-left:10px;
+	background-color:var(--MustHave_white);
+}
+
+h3{
+	color: var(--MustHave_blue);
+}
+
+footer{
+	font-size:0.77em;
+}
+@media screen and (max-width: 768px) and (min-width: 340px){
+	
+	.column_article{
+		float:left;
+		width:60%;
+	}
+	
+	.column_company{
+		float:right;
+		width:40%;
+	}
+	
+	.logo_text{
+		font-size:0.97em;
+		color:orange;
+	}
+	
+	.logo_image{
+		width:320px;
+	}
+	
+	footer{
+		font-size:0.97em;
+	}
+	
+}
+@media only screen and (min-width: 768px){
+	
+	.column_article{
+		float:left;
+		width:60%;
+	}
+	
+	.column_company{
+		float:right;
+		width:40%;
+	}
+	.logo_text{
+		font-size:1.20em;
+		color:orange;
+	}
+	
+	.logo_image{
+		width:400px;
+	}
+	
+	footer{
+		font-size:1.20em;
+	}
+
+	/*grid view*/
+	
+	.col_01{width:8.33%;}
+	.col_02 {width: 16.66%;}
+	.col_03 {width: 25%;}
+	.col_04 {width: 33.33%;}
+	.col_05 {width: 41.66%;}
+	.col_06 {width: 50%;}
+	.col_07 {width: 58.33%;}
+	.col_08 {width: 66.66%;}
+	.col_09 {width: 75%;}
+	.col_10 {width: 83.33%;}
+	.col_11 {width: 91.66%;}
+	.col_12 {width: 100%;}
+
+}
+
